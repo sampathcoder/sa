@@ -1,16 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int n, i, sum = 0;
-    
-printf("Enterger");
-    scanf("%d",&n);
-    for(i=1;i<=n;++i)
+    int a=1234,count=0;
+     
+        do
     {
-        sum += i;   
-    }
-
-    printf("Sum = %d",sum);
-
-    return 0;
+        a=a%10;
+            count++;
+        }
+        while(a/10==0);
+        
+      return 0;
 }
